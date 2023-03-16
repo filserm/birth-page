@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
 * {
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
 
@@ -10,28 +14,75 @@ body {
   background-color: #111111;
 }
 
+.card {
+  margin: auto;
+  float: none;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+  padding-bottom: 1vh;
+  background-color: rgba(245, 245, 245, 0);
+  border: none;
+}
+
+.badge-primary {
+  font-family: 'Quicksand', sans-serif;
+  margin: auto;
+  margin-bottom: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  float: none;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  line-height: 1.6;
+}
+
+.badge-time {
+  margin: auto;
+  margin-top: 1vh;
+  padding-left: 150px;
+  padding-right: 150px;
+  float: none;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.badge-age {
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+  float: none;
+  background-color: #202020;
+  color: #ffc107;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  line-height: 1.6;
+}
+
 .countdown {
   width: 60vw;
   display: flex;
   justify-content: space-around;
-  gap: 20px;
-  position: absolute;
+  gap: 0px;
+  position: relative;
   transform: translate(-50%, -50%);
-  top: 50%;
+  //top: 60%;
   left: 50%;
 }
 
 .box {
-  //width: 28vmin;
-  //height: 28vmin;
-  width: auto;
-  height: auto;
+  width: 11vmin;
+  height: 15vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  //box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
   font-size: 16px;
 }
 
@@ -55,8 +106,11 @@ span.num {
 }
 
 span.text {
-  font-size: 1.2em;
-  background-color: #2887e3;
+  font-size: 1.5em;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #ffc107;
+  color: black;
+  font-weight: bold !important;
   display: block;
   width: 100%;
   text-align: center;
