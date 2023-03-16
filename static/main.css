@@ -24,18 +24,58 @@ body {
   border: none;
 }
 
+.nameday_box {
+  margin-top: 1vh;
+  display: flex;
+  //align-items: stretch;
+  align-content: space-between;
+  //padding-left: 10vw;
+  //padding-right: 10vw;
+
+}
+
+.nameday_dates {
+  display: flex;
+  align-items: center;
+}
+
+.badge-time-nameday {
+  margin: auto;
+  margin-top: 1vh;
+  //padding-left: 150px;
+  //padding-right: 150px;
+  float: none;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  line-height: 1.6;
+}
+
+
+.badge-nameday {
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  //margin-top: 3vh;
+  //margin-bottom: 10vh;
+  float: none;
+  background-color: #202020;
+  color: lightgreen;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  line-height: 1.6;
+}
+
 .badge-primary {
   font-family: 'Quicksand', sans-serif;
   margin: auto;
-  margin-bottom: 1vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  float: none;
   background-color: #202020;
   display: flex;
   justify-content: center;
-  font-size: x-large;
-  line-height: 1.6;
+  font-size: large;
+  //line-height: 1.6;
 }
 
 .badge-time {
@@ -48,18 +88,25 @@ body {
   display: flex;
   justify-content: center;
   line-height: 1.6;
+  font-size: medium;
 }
+
+
 
 .badge-age {
   margin: auto;
   margin-top: 3vh;
   margin-bottom: 10vh;
-  float: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  //float: none;
   background-color: #202020;
   color: #ffc107;
   display: flex;
   justify-content: center;
-  font-size: x-large;
+  font-size: large;
   line-height: 1.6;
 }
 
