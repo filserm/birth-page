@@ -1,4 +1,4 @@
-const [years, months, days] = dateDiff('2022-10-15')
+var [years, months, days] = dateDiff('2022-10-15')
 console.log("years", years, "months", months, "days", days)
 var today = new Date();
 var current_day = new Date();
@@ -8,6 +8,14 @@ current_day = moment.tz(current_day, 'DD/MM/YYYY HH:mm:ss', 'Europe/Berlin');
 const diff = birthday.diff(current_day);
 console.log(birthday, current_day)
 const diffDuration = moment.duration(diff)
+
+var now = new Date();
+var hour = now.getHours();
+var minutes = now.getMinutes();
+//console.log("stunde: ", hour, "minutes: ", minutes)
+if( hour <= 14 && minutes <= 21 && days > 0 ){
+    days = days - 1
+}
 
 let hours = diffDuration.hours() * (-1)
 minutes = diffDuration.minutes() * (-1)
