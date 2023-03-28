@@ -3,7 +3,7 @@ console.log("years", years, "months", months, "days", days)
 var today = new Date();
 var current_day = new Date();
 
-const birthday = moment.tz("2022-10-15 15:21:00", "Europe/Berlin");
+const birthday = moment.tz("2022-10-15 14:21:00", "Europe/Berlin");
 current_day = moment.tz(current_day, 'DD/MM/YYYY HH:mm:ss', 'Europe/Berlin');
 const diff = birthday.diff(current_day);
 console.log(birthday, current_day)
