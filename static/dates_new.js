@@ -23,12 +23,12 @@ var now = new Date();
 var hour = now.getHours();
 var minutes = now.getMinutes();
 //console.log("stunde: ", hour, "minutes: ", minutes)
-if( hour <= 13 && days > 0 ){
-    days = days - 1
-}
-if( hour == 14 && minutes <= 21 && days > 0 ){
-    days = days - 1
-}
+// if( hour <= 13 && days > 0 ){
+//     days = days - 1
+// }
+// if( hour == 14 && minutes <= 21 && days > 0 ){
+//     days = days - 1
+// }
 
 let hours = diffDuration.hours() * (-1)
 minutes = diffDuration.minutes() * (-1)
