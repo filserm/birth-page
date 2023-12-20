@@ -13,7 +13,9 @@ current_day = moment.tz(current_day, 'DD/MM/YYYY HH:mm:ss', 'Europe/Berlin');
 
 
 weeks=current_day.diff(birthday, 'week');
+month=current_day.diff(birthday, 'month');
 console.log("wochen: ", weeks)
+console.log("monate: ", months)
 
 const diff = birthday.diff(current_day);
 console.log(birthday, current_day)
@@ -49,6 +51,7 @@ function insertVars() {
     //document.getElementById('seconds').innerHTML = seconds
 
     document.getElementById('weeks').innerHTML = weeks
+    document.getElementById('month').innerHTML = month
 
 }
 
